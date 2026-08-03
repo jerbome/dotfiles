@@ -9,6 +9,9 @@ trust_level = "trusted"
 [projects."/Users/jerome/dev/dataiku/millenium-falcon-challenge"]
 trust_level = "trusted"
 
+[projects."/Users/jerome/.local/share/chezmoi"]
+trust_level = "trusted"
+
 [tui]
 pet = "seedy"
 theme = "nightfox"
