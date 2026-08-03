@@ -21,9 +21,19 @@ return {
     },
   },
   {
+    "EdenEast/nightfox.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {
+      styles = {
+        functions = "italic",
+      },
+    },
+  },
+  {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "tokyonight",
+      colorscheme = "nightfox",
     },
   },
 }
