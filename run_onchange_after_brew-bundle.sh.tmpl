@@ -1,0 +1,10 @@
+#!/bin/sh
+# Re-run this script when the manifest changes: {{ include "Brewfile" | sha256sum }}
+set -eu
+
+if ! command -v brew >/dev/null 2>&1; then
+    printf '%s\n' 'Homebrew is not installed; skipping Brewfile.'
+    exit 0
+fi
+
+brew bundle --file="$CHEZMOI_HOME_DIR/Brewfile"
